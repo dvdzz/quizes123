@@ -1,1 +1,8 @@
-<h1><%= @animals.inspect %></h1>
+<% @animals.each do |animal| %>
+  <div>
+    <h1><%= animal.name %></h1><br />
+    <i><%= animal.description %></i><br />
+  </div>
+
+  <hr />
+<% end %>
